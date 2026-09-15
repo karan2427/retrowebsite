@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Retro Developers | Premium 3 BHK Builder Floors in Sector 93, Gurugram</title>
+    <meta name="description" content="Discover luxury 3 BHK independent builder floors by Retro Developers in Sector 93, Hayatpur Road, Gurugram. Smart homes with premium amenities starting at ₹1.56 Crore.">
+    
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --accent-bronze: #D4AF37; 
+            --accent-hover: #F9D77E;
+            --glass-bg: rgba(15, 20, 28, 0.75);
+            --glass-border: rgba(212, 175, 55, 0.3);
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'Montserrat', sans-serif;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { color: #FDFBF7; font-family: var(--font-body); line-height: 1.7; overflow-x: hidden; background-color: #05080c; -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        
+        h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 600; color: #fff; }
+        .subtitle { font-family: var(--font-body); text-transform: uppercase; letter-spacing: 3px; font-size: 0.85rem; color: var(--accent-bronze); margin-bottom: 15px; display: block; font-weight: 500; }
+
+        /* --- Navigation --- */
+        header.main-nav {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+            padding: 20px 5%; display: flex; justify-content: space-between; align-items: center;
+            background: rgba(5, 8, 12, 0.85); backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--glass-border); transition: var(--transition);
+        }
+        .logo { font-family: var(--font-heading); font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: var(--accent-bronze); }
+        
+        .nav-actions { display: flex; gap: 25px; align-items: center; }
+        .nav-link { font-weight: 500; letter-spacing: 1px; color: #fff; transition: var(--transition); font-size: 0.85rem; text-transform: uppercase; cursor: pointer; }
+        .nav-link:hover { color: var(--accent-bronze); }
+        
+        .cta-btn {
+            background-color: var(--accent-bronze); color: #000; padding: 12px 24px;
+            font-family: var(--font-body); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem;
+            transition: var(--transition); border: 1px solid var(--accent-bronze); cursor: pointer; border-radius: 2px;
+            min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
+        }
+        .cta-btn:hover { background-color: transparent; color: var(--accent-bronze); }
+
+        /* --- Hero Section --- */
+        .hero { position: relative; padding: 160px 5% 80px; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; max-width: 1300px; align-items: center; width: 100%; }
+        .hero-image-wrapper { background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); padding: 20px; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 30px 60px rgba(0,0,0,0.5); text-align: center; }
+        .hero-building-img { width: 100%; height: auto; max-height: 75vh; object-fit: contain; border-radius: 8px; display: block; margin: 0 auto; }
+        
+        .hero-content { color: #fff; }
+        .hero-content h1 { font-size: clamp(2.5rem, 4vw, 4rem); line-height: 1.1; margin-bottom: 20px; font-weight: 400; }
+        .hero-subtitle { font-size: clamp(1rem, 1.5vw, 1.2rem); margin-bottom: 30px; font-weight: 300; letter-spacing: 1px; color: #eee; }
+        .location-pin { display: flex; align-items: center; gap: 10px; font-size: 0.95rem; font-weight: 300; letter-spacing: 1px; margin-bottom: 30px;}
+        .price-tag-hero { display: inline-block; background: rgba(212, 175, 55, 0.15); border: 1px solid var(--accent-bronze); color: var(--accent-bronze); font-size: 1.3rem; font-weight: 600; padding: 12px 25px; border-radius: 4px; margin-bottom: 25px; }
+
+        /* --- Quick Stats Bar --- */
+        .quick-stats { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); max-width: 1200px; margin: 0 auto 60px; padding: 25px 20px; border-radius: 8px; box-shadow: 0 25px 50px rgba(0,0,0,0.3); border: 1px solid var(--glass-border); }
+        .stat-item { text-align: center; padding: 10px 15px; flex: 1; min-width: 130px; }
+        .stat-value { display: block; font-family: var(--font-heading); font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--accent-bronze); margin-bottom: 5px; }
+        .stat-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #ddd; }
+        .stat-divider { width: 1px; height: 40px; background: var(--glass-border); display: block; }
+
+        /* --- Global Sections & Grids --- */
+        section { padding: 80px 5%; position: relative; z-index: 1; }
+        .section-header { margin-bottom: 50px; text-align: center; }
+        .section-header h2 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.2; margin-bottom: 15px; font-weight: 400; }
+        .section-header p { font-size: 1rem; color: #ddd; max-width: 600px; margin: 0 auto; }
+
+        .connectivity-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+        .connect-card { background: var(--glass-bg); backdrop-filter: blur(10px); padding: 30px 25px; border: 1px solid var(--glass-border); text-align: center; border-radius: 8px; transition: var(--transition); }
+        .connect-card:hover { transform: translateY(-5px); border-color: var(--accent-bronze); background: rgba(20, 25, 30, 0.85); }
+        .icon-circle { width: 60px; height: 60px; border-radius: 50%; border: 1px solid var(--glass-border); display: flex; justify-content: center; align-items: center; margin: 0 auto 15px; color: var(--accent-bronze); font-size: 1.3rem; }
+        .connect-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+        .distance { display: block; margin-top: 15px; font-weight: 600; color: var(--accent-bronze); font-size: 1rem; }
+
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 4/3; border: 1px solid var(--glass-border); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .gallery-item:hover img { transform: scale(1.03); }
+        .gallery-overlay { position: absolute; bottom: 0; left: 0; width: 100%; padding: 25px 20px; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); color: #fff; }
+        .gallery-overlay h4 { color: var(--accent-bronze); font-size: 1.3rem; font-family: var(--font-heading); margin-bottom: 5px; }
+
+        .specs-container { max-width: 900px; margin: 0 auto; background: var(--glass-bg); backdrop-filter: blur(12px); border: 1px solid var(--glass-border); border-radius: 8px; padding: 0 30px; }
+        .spec-row { display: flex; justify-content: space-between; border-bottom: 1px solid var(--glass-border); padding: 25px 0; gap: 20px; }
+        .spec-row:last-child { border-bottom: none; }
+        .spec-title { font-weight: 600; color: var(--accent-bronze); width: 40%; font-size: 1rem; }
+        .spec-detail { color: #fff; width: 60%; font-size: 0.95rem; }
+
+        .floor-plan-wrapper { max-width: 750px; margin: 0 auto; background: var(--glass-bg); backdrop-filter: blur(15px); padding: 25px; border-radius: 12px; box-shadow: 0 25px 50px rgba(0,0,0,0.5); border: 1px solid var(--glass-border); }
+        .plan-img { width: 100%; height: auto; display: block; border-radius: 4px; }
+
+        .map-faq-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; }
+        .map-wrapper iframe { width: 100%; height: 350px; border-radius: 8px; border: 1px solid var(--glass-border); filter: grayscale(40%) contrast(1.2); }
+        
+        .faq-wrapper { background: var(--glass-bg); backdrop-filter: blur(10px); padding: 30px; border-radius: 8px; border: 1px solid var(--glass-border); }
+        details { border-bottom: 1px solid var(--glass-border); padding: 15px 0; }
+        details:last-child { border-bottom: none; }
+        summary { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #fff; transition: var(--transition); }
+        summary::-webkit-details-marker { display: none; }
+        summary:hover { color: var(--accent-bronze); }
+        summary::after { content: '+'; font-size: 1.3rem; color: var(--accent-bronze); }
+        details[open] summary::after { content: '−'; }
+        .faq-content { padding-top: 10px; color: #ddd; font-size: 0.9rem; line-height: 1.6; }
+
+        /* --- WhatsApp Forms Section --- */
+        .forms-section { padding-bottom: 120px; }
+        .forms-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; }
+        
+        .form-card { background: var(--glass-bg); backdrop-filter: blur(15px); padding: 40px 30px; border-radius: 8px; color: #fff; border: 1px solid var(--glass-border); box-shadow: 0 30px 60px rgba(0,0,0,0.4); }
+        .form-card h3 { font-size: 1.8rem; margin-bottom: 10px; color: var(--accent-bronze); }
+        .form-card p { color: #ddd; margin-bottom: 25px; font-size: 0.9rem; }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-control { width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.4); padding: 12px 0; color: #fff; font-family: var(--font-body); font-size: 1rem; transition: var(--transition); border-radius: 0; }
+        .form-control:focus { outline: none; border-bottom-color: var(--accent-bronze); }
+        .form-control::placeholder { color: rgba(255,255,255,0.5); }
+        
+        .submit-btn { width: 100%; background: var(--accent-bronze); color: #000; padding: 16px; border: none; font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: var(--transition); margin-top: 10px; border-radius: 2px; min-height: 48px; }
+        .submit-btn:hover { background: #fff; }
+
+        footer { background: rgba(5, 8, 12, 0.95); padding: 60px 5% calc(40px + env(safe-area-inset-bottom)); border-top: 1px solid var(--glass-border); text-align: center; position: relative; z-index: 10; }
+        .footer-logo { font-family: var(--font-heading); font-size: 2.2rem; color: var(--accent-bronze); margin-bottom: 15px; font-weight: 400; }
+        .disclaimer-text { font-size: 0.7rem; color: #aaa; max-width: 900px; margin: 0 auto; line-height: 1.7; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        .whatsapp-float { position: fixed; bottom: calc(20px + env(safe-area-inset-bottom)); right: 20px; background-color: #25d366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 28px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); z-index: 1000; transition: var(--transition); }
+        .whatsapp-float:hover { transform: scale(1.08); background-color: #128c7e; }
+
+        .reveal { opacity: 0; transform: translateY(20px); transition: 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 992px) {
+            .hero-container { grid-template-columns: 1fr; text-align: center; }
+            .location-pin { justify-content: center; }
+            .hero { padding-top: 120px; }
+        }
+        @media (max-width: 768px) {
+            .stat-divider { display: none; }
+            .quick-stats { flex-direction: column; gap: 15px; margin: 0 20px 40px; padding: 20px; }
+            .spec-row { flex-direction: column; gap: 8px; }
+            .spec-title, .spec-detail { width: 100%; }
+            .form-card, .faq-wrapper, .specs-container { padding: 25px 20px; }
+            .nav-actions .nav-link { display: none; }
+            header.main-nav { padding: 15px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-nav" id="navbar">
+        <div class="logo">Retro Developers</div>
+        <div class="nav-actions">
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#specs" class="nav-link">Specs</a>
+            <a href="#floorplan" class="nav-link">Floor Plan</a>
+            <a href="#contact" class="cta-btn">Book Visit</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-image-wrapper reveal">
+                <img src="f0d6dcd4.jpeg" alt="Retro Developers Building Elevation" class="hero-building-img">
+            </div>
+            <div class="hero-content reveal">
+                <span class="subtitle">Premium Independent Floors</span>
+                <h1>A Smarter Home,<br>A Brighter Tomorrow</h1>
+                <p class="hero-subtitle">Experience elevated luxury living in Gurugram with state-of-the-art smart home automation.</p>
+                <div class="price-tag-hero">₹1.56 Crore Complete Package</div>
+                <div class="location-pin">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Sector 93, Hayatpur Road, Gurugram
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <div class="quick-stats reveal">
+        <div class="stat-item">
+            <span class="stat-value">₹1.56 Cr</span>
+            <span class="stat-label">Complete Package</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-value">3 BHK</span>
+            <span class="stat-label">Independent Floor</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-value">1,550</span>
+            <span class="stat-label">Sq. Ft. Carpet Area</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-value">45 Gaj</span>
+            <span class="stat-label">Land Share Registry</span>
+        </div>
+    </div>
+
+    <!-- Neighborhood Connectivity -->
+    <section id="connectivity">
+        <div class="section-header reveal">
+            <span class="subtitle">The Neighborhood</span>
+            <h2>Flawless Connectivity</h2>
+            <p>Located on Hayatpur Road, Sector 93. You are never too far from what matters most.</p>
+        </div>
+        <div class="connectivity-grid">
+            <div class="connect-card reveal">
+                <div class="icon-circle">🛣️</div>
+                <h3>Expressways</h3>
+                <span class="distance">5 Mins to NH-8 & Dwarka Exp.</span>
+            </div>
+            <div class="connect-card reveal" style="transition-delay: 0.1s;">
+                <div class="icon-circle">🏥</div>
+                <h3>Healthcare</h3>
+                <span class="distance">10 Mins to Medanta / Artemis</span>
+            </div>
+            <div class="connect-card reveal" style="transition-delay: 0.2s;">
+                <div class="icon-circle">🏫</div>
+                <h3>Education</h3>
+                <span class="distance">Within 3-5 KM Radius</span>
+            </div>
+            <div class="connect-card reveal" style="transition-delay: 0.3s;">
+                <div class="icon-circle">✈️</div>
+                <h3>Transit</h3>
+                <span class="distance">30 Mins to IGI Airport</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interior Gallery -->
+    <section id="gallery">
+        <div class="section-header reveal">
+            <span class="subtitle">The Aesthetic</span>
+            <h2>A Glimpse of Elegance</h2>
+            <p>Step into thoughtfully designed spaces featuring modern interiors, premium fittings, and absolute comfort.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Living Room" loading="lazy">
+                <div class="gallery-overlay"><h4>Living Room</h4><p>False Ceiling & Interior Work</p></div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.1s;">
+                <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bedroom" loading="lazy">
+                <div class="gallery-overlay"><h4>Bedroom</h4><p>Bed-Back Paneling</p></div>
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kitchen" loading="lazy">
+                <div class="gallery-overlay"><h4>Smart Kitchen</h4><p>Semi-Furnished & Premium</p></div>
+            </div>
+            <div class="gallery-item reveal" style="transition-delay: 0.1s;">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bathroom" loading="lazy">
+                <div class="gallery-overlay"><h4>Modern Bathrooms</h4><p>Premium Fittings</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive Specifications -->
+    <section id="specs">
+        <div class="section-header reveal">
+            <span class="subtitle">Deep Dive</span>
+            <h2>Project Specifications</h2>
+            <p>Every element has been curated to provide an elevated, hassle-free living experience.</p>
+        </div>
+        <div class="specs-container reveal">
+            <div class="spec-row">
+                <div class="spec-title">Home Automation</div>
+                <div class="spec-detail">Fully integrated system featuring touch-screen switches, smart lighting, fan control, programmable smart scenes, and central gateway.</div>
+            </div>
+            <div class="spec-row">
+                <div class="spec-title">Security & Access</div>
+                <div class="spec-detail">Premium steel safety main entrance door equipped with face recognition and biometric fingerprint lock/unlock systems. Zero regular monthly maintenance charges.</div>
+            </div>
+            <div class="spec-row">
+                <div class="spec-title">Interior Finishes</div>
+                <div class="spec-detail">Complete false ceiling work across the floor, customized bed-back designs, and elegant feature wall paneling.</div>
+            </div>
+            <div class="spec-row">
+                <div class="spec-title">Water & Utilities</div>
+                <div class="spec-detail">Municipal supply + Borewell + Sewerage connections. Dedicated store area, Pooja space, and lift facility included.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plan Section -->
+    <section id="floorplan">
+        <div class="section-header reveal">
+            <span class="subtitle">Spatial Design</span>
+            <h2>Planned With Purpose</h2>
+            <p>Intelligently designed layouts ensuring maximum cross-ventilation and natural light.</p>
+        </div>
+        <div class="floor-plan-wrapper reveal">
+            <img src="photo_2026-09-15_11-16-26.jpg" alt="3 BHK Floor Plan Layout" class="plan-img" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Location Map & FAQ Section -->
+    <section id="location">
+        <div class="map-faq-container">
+            <div class="map-wrapper reveal">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Prime Location</h3>
+                <p style="color: #ddd; margin-bottom: 20px;">Sector 93, Hayatpur Road, Manesar, Gurugram.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28074.832789182063!2d76.9200832!3d28.4010168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3d0f019f56cb%3A0xc6edab05e8e974e6!2sSector%2093%2C%20Gurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="faq-wrapper reveal">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Frequently Asked Questions</h3>
+                <details open>
+                    <summary>Payment Options?</summary>
+                    <div class="faq-content">We offer a highly flexible 50:50 payment plan, or you can opt for a One-Time Full Payment.</div>
+                </details>
+                <details>
+                    <summary>Maintenance Fees?</summary>
+                    <div class="faq-content">No! You enjoy a maintenance-free floor. The only minor recurring fee is for the security guard at the entrance.</div>
+                </details>
+                <details>
+                    <summary>Land Ownership?</summary>
+                    <div class="faq-content">Yes, you receive a proportionate land share of approximately 45 Gaj with proper registry in your name.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Connected Forms Section -->
+    <section class="forms-section" id="contact">
+        <div class="section-header reveal">
+            <span class="subtitle">Next Steps</span>
+            <h2>Connect With Us</h2>
+            <p>Fill out either form below to instantly connect with our sales team via WhatsApp.</p>
+        </div>
+        
+        <div class="forms-container">
+            <!-- Site Visit Form -->
+            <div class="form-card reveal">
+                <h3>Book a Private Visit</h3>
+                <p>Schedule a guided tour of the property and sample interiors.</p>
+                <form id="visitForm">
+                    <div class="form-group"><input type="text" id="visit-name" class="form-control" placeholder="Full Name *" required></div>
+                    <div class="form-group"><input type="tel" id="visit-phone" class="form-control" placeholder="Phone Number *" required pattern="[0-9]{10,12}"></div>
+                    <button type="submit" class="submit-btn">Request Viewing via WhatsApp</button>
+                </form>
+            </div>
+            
+            <!-- Brochure Download Form (Now Connected to WhatsApp) -->
+            <div class="form-card reveal" style="transition-delay: 0.1s;">
+                <h3>Download E-Brochure</h3>
+                <p>Get the complete floor plans and details sent instantly.</p>
+                <form id="brochureForm">
+                    <div class="form-group"><input type="text" id="brochure-name" class="form-control" placeholder="Full Name *" required></div>
+                    <div class="form-group"><input type="email" id="brochure-email" class="form-control" placeholder="Email Address *" required></div>
+                    <button type="submit" class="submit-btn">Get Brochure via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Retro Developers</div>
+        <p style="color: #ddd; margin-bottom: 20px;">www.retrodevelopers.in | +91 80170 00032 | +91 70150 31094</p>
+        <p class="disclaimer-text">
+            Disclaimer: The project is not registered under RERA. Pricing, area, land-share documentation, specifications, timelines, and inclusions are subject to final agreed documents and applicable approvals. The images, layout, and floor plans are for representation purposes only. 
+        </p>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918017000032?text=Hello,%20I%20am%20interested%20in%20the%203%20BHK%20Floors%20at%20Sector%2093." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16.05 32h-.05c-2.6 0-5.1-.65-7.35-1.9L0 32l1.95-8.45C.65 21.35 0 18.75 0 16.05 0 7.2 7.2 0 16.05 0 24.85 0 32 7.2 32 16.05c0 8.8-7.15 15.95-15.95 15.95zm-7.3-4.9l.45.25c2.1 1.25 4.5 1.9 6.85 1.9 7.2 0 13.05-5.85 13.05-13.05S23.25 3 16.05 3 3 8.85 3 16.05c0 2.4.65 4.7 1.9 6.85l.3.45L3.9 28.5l5.25-1.4z"></path><path d="M23.1 20.35c-.35-.15-2.05-1-2.35-1.15-.3-.1-.5-.15-.7.15-.2.3-.9 1.15-1.1 1.4-.2.25-.4.25-.75.1-1.65-.8-2.9-1.6-4-3.5-.15-.25 0-.4.15-.5.1-.15.3-.35.45-.5.15-.15.2-.25.3-.45.1-.15.05-.3-.05-.4-.1-.15-.7-1.7-.95-2.35-.25-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.75.35-.25.25-.95.95-.95 2.3 0 1.35 1 2.65 1.15 2.85.15.2 1.95 2.95 4.7 4.1 2.25.95 3.1 1.05 4.2.9.8-.1 2.05-.85 2.35-1.65.3-.8.3-1.5.2-1.65-.15-.15-.35-.25-.7-.4z"></path></svg>
+    </a>
+
+    <!-- Scripts for WhatsApp Integration -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Navbar Scroll Effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // 1. Book Visit Form -> WhatsApp
+            const visitForm = document.getElementById('visitForm');
+            visitForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('visit-name').value;
+                const phone = document.getElementById('visit-phone').value;
+                
+                const message = encodeURIComponent(`Hello Retro Developers, I want to book a private site visit.\n\nName: ${name}\nPhone: ${phone}`);
+                window.open(`https://wa.me/918017000032?text=${message}`, '_blank');
+
+                visitForm.innerHTML = `<div style="text-align:center; padding: 20px 0;">
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size:1.8rem; margin-bottom:10px; color: var(--accent-bronze);">Thank You, ${name}!</h3>
+                    <p style="color:#ddd;">Opening WhatsApp to connect with our sales team...</p>
+                </div>`;
+            });
+
+            // 2. Brochure Download Form -> WhatsApp
+            const brochureForm = document.getElementById('brochureForm');
+            brochureForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('brochure-name').value;
+                const email = document.getElementById('brochure-email').value;
+                
+                const message = encodeURIComponent(`Hello Retro Developers, I would like to download the E-Brochure.\n\nName: ${name}\nEmail: ${email}`);
+                window.open(`https://wa.me/918017000032?text=${message}`, '_blank');
+
+                brochureForm.innerHTML = `<div style="text-align:center; padding: 20px 0;">
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size:1.8rem; margin-bottom:10px; color: var(--accent-bronze);">Thank You, ${name}!</h3>
+                    <p style="color:#ddd;">Opening WhatsApp to receive your E-Brochure...</p>
+                </div>`;
+            });
+
+            // Scroll Animations
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            reveals.forEach(reveal => observer.observe(reveal));
+        });
+    </script>
+</body>
+</html>
